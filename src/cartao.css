@@ -1,6 +1,7 @@
 .tela-cartao {
     background-color: #4C566A;
-    padding-top: 10rem;
+    padding-top: 8rem;
+    padding-bottom: 10%;
   display: flex;
 }
 .link-cartao {
@@ -23,7 +24,7 @@
   content: "";
   position: absolute;
   right: 100%;
-  bottom: 0.14em;
+  bottom: -0.05em;
   left: 0;
   transition: right 0.8s cubic-bezier(0, 0.5, 0, 1);
 }
@@ -32,15 +33,19 @@
 }
 
 .cartao-msg {
-    padding: 0% 10% 0% 10%;
+    padding: 10% 10% 5% 10%;
   display: block;
   width: 30vw;
 }
 .titulo-cartao {
+  color:black;
     font-size: 3rem;
     text-decoration: transparent;
     padding-top:0px ;
+    width: 20rem;
     display: block;
+    border-bottom:solid  transparent;
+    transition-duration: 0.2s;
 }
 .titulo-cartao:hover {
     border-bottom:solid #fcfdff;
@@ -48,4 +53,32 @@
     font-size: 3rem;
     padding:0px 0px 0px 0px ;
     display: block;
+}
+.msg-cartao{
+  font-size: 1.5rem;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+  transition-duration: 1.8s;
+  background-color: transparent;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background:#4C566A; 
+  transition-duration: 1.8s;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #E5E9F0;
+  transition-duration: 1.8s; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #E5E9F0;
+  border-radius: 1rem;
+  transition-duration: 1.8s;
 }

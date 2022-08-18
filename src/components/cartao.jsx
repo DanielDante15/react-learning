@@ -8,7 +8,7 @@ function Cartao() {
 
       <div className="cartao-msg">
         <a href="" className="titulo-cartao">Cartão NuDant</a>
-        <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed facilis illo itaque excepturi eveniet nisi dolorem saepe officiis veniam ut tenetur, consectetur fugit qui aspernatur unde molestias, quis veritatis dolorum. <br /><br /></span>
+        <span className="msg-cartao">Lorem, ipsum dolor sit a officiis veniam ut tenetur, consectetur fugit qui aspernatur unde molestias, quis veritatis dolorum. <br /><br /></span>
         <a className="link-cartao" href="">Saiba mais</a>
       </div>
 
