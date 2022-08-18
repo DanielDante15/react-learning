@@ -5,7 +5,9 @@ function Navbar() {
   return (
     <>
       <nav className="navbar">
+
       <a className="btnLogo" href=""> <img src={image}  className="logo" alt="teste" href=""/></a>
+      
         <div className="navOptions">
             <a href="">Home</a>
             <a href="">Para você</a>

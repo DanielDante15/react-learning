@@ -37,7 +37,6 @@
 .btnLogo{
     width: 3rem;
     padding-bottom: 0;
-    
 }
 .btn-cartao{
     padding-top: 15px;
@@ -45,7 +44,7 @@
     color:#ECEFF4;
     background-color: #4C566A  ;
     text-decoration: none;
-    border-radius: 10px;
+    border-radius: 20px;
     height: 40px;
     width: 5rem;
     text-align: center;

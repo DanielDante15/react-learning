@@ -1,0 +1,51 @@
+.tela-cartao {
+    background-color: #4C566A;
+    padding-top: 10rem;
+  display: flex;
+}
+.link-cartao {
+  text-decoration: none;
+  color: #ffffff;
+}
+.link-cartao {
+  text-decoration: none;
+}
+.link-cartao:hover {
+  text-decoration: none;
+}
+.link-cartao {
+  text-decoration: none;
+  position: relative;
+}
+.link-cartao:after {
+  border-radius: 1em;
+  border-top: 0.2em solid #fcfdff;
+  content: "";
+  position: absolute;
+  right: 100%;
+  bottom: 0.14em;
+  left: 0;
+  transition: right 0.8s cubic-bezier(0, 0.5, 0, 1);
+}
+.link-cartao:hover:after {
+  right: 0;
+}
+
+.cartao-msg {
+    padding: 0% 10% 0% 10%;
+  display: block;
+  width: 30vw;
+}
+.titulo-cartao {
+    font-size: 3rem;
+    text-decoration: transparent;
+    padding-top:0px ;
+    display: block;
+}
+.titulo-cartao:hover {
+    border-bottom:solid #fcfdff;
+    width: 20rem;
+    font-size: 3rem;
+    padding:0px 0px 0px 0px ;
+    display: block;
+}

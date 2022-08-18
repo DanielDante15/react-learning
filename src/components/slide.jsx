@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, Navigation } from "swiper";
 import { TextField } from "@mui/material";
-import { alpha, styled } from '@mui/material/styles';
+import { alpha, styled } from "@mui/material/styles";
 
 import "swiper/css";
 import "swiper/css/pagination";
@@ -10,34 +10,25 @@ import "swiper/css/navigation";
 import "../slide.css";
 
 const CustomTextField = styled(TextField)({
-'& label.Mui-focused': {
-    color: '#ECEFF4',
-    
-    },
-    '& .MuiInput-underline:after': {
-    borderBottomColor: '#ECEFF4',
-    borderBottom: '2px solid white'
-    },
-    '& .MuiOutlinedInput-root': {
-    '& fieldset': {
-        borderColor: '#ECEFF4',
-        backgroundColor: '#ECEFF4',
-    },
-    '&:hover fieldset': {
-        borderColor: '#ECEFF4',
-        backgroundColor: '#ECEFF4',
-    },
-    '&.Mui-focused fieldset': {
-        borderColor: '#ECEFF4',
-        backgroundColor: '#ECEFF4',
-    },
-    '&.MuiInput TextField':{
-        borderColor: '#ECEFF4',
-        backgroundColor: '#ECEFF4',
-
-    }
-    },
+  "& label.Mui-focused": {
+    color: "#ECEFF4",
+  },
+  "& .MuiInput-underline": {
+    borderBottomColor: "#ECEFF4",
+    borderBottom: "2px solid white",
+  },
+  "& .MuiInput-underline:after": {
+    borderBottomColor: "#ECEFF4",
+    borderBottom: "2px solid white",
+  },
+  "& label": {
+    color: "#ECEFF4",
+  },
+  "& label.placeholder": {
+    color: "#ECEFF4",
+  },
 });
+
 
 function Slide() {
   return (
@@ -55,7 +46,7 @@ function Slide() {
             clickable: true,
           }}
           navigation={false}
-          modules={[Autoplay, Navigation]}
+          modules={[Autoplay]}
           className="mySwiper"
         >
           <SwiperSlide>
@@ -79,12 +70,19 @@ function Slide() {
           <div>
             <h1>Sua liberdade financeira está aqui.</h1>
           </div>
-          <div>
-          
-          </div>
+          <div></div>
           <div className="campoCartao">
             <h2>Peça já seu cartão NuDant</h2>
-            <CustomTextField  fullWidth sx={{marginBottom:4,marginTop:1}} helperText="Digite seu CPF" id="standard-multiline-static" placeholder="000.000.000-00" label="CPF" variant="standard" size="medium"/>
+            <CustomTextField
+              fullWidth
+              sx={{ marginBottom: 7, marginTop: 1 }}
+              helperText="Digite seu CPF"
+              id="standard-multiline-static"
+              placeholder="000.000.000-00"
+              label="CPF"
+              variant="standard"
+              size="medium"
+            />
             <a href="">Continuar</a>
           </div>
         </div>
