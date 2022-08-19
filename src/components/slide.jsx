@@ -83,7 +83,7 @@ function Slide() {
               variant="standard"
               size="medium"
             />
-            <a href="">Continuar</a>
+            <a href="" className="btn-continuar">Continuar</a>
           </div>
         </div>
       </div>

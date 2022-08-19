@@ -1,30 +1,26 @@
 .tela-cartao {
+    display: flex;
     background-color: #4C566A;
     padding-top: 8rem;
-    padding-bottom: 10%;
-  display: flex;
+    padding-bottom: %;
 }
 .link-cartao {
   text-decoration: none;
   color: #ffffff;
-}
-.link-cartao {
-  text-decoration: none;
+  font-size: large;
 }
 .link-cartao:hover {
   text-decoration: none;
-}
-.link-cartao {
-  text-decoration: none;
   position: relative;
 }
+
 .link-cartao:after {
   border-radius: 1em;
-  border-top: 0.2em solid #fcfdff;
+  border-top: 0.12em solid #fcfdff;
   content: "";
   position: absolute;
   right: 100%;
-  bottom: -0.05em;
+  bottom: -0.03em;
   left: 0;
   transition: right 0.8s cubic-bezier(0, 0.5, 0, 1);
 }
@@ -33,12 +29,12 @@
 }
 
 .cartao-msg {
-    padding: 10% 10% 5% 10%;
+    padding: 10% 10% 5% 15%;
   display: block;
   width: 30vw;
 }
 .titulo-cartao {
-  color:black;
+  color:#fcfdff;
     font-size: 3rem;
     text-decoration: transparent;
     padding-top:0px ;
