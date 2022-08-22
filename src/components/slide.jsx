@@ -7,7 +7,7 @@ import { alpha, styled } from "@mui/material/styles";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import "../slide.css";
+import "../css/slide.css";
 
 const CustomTextField = styled(TextField)({
   "& label.Mui-focused": {

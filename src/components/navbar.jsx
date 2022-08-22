@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "../navbar.css";
+import "../css/navbar.css";
 import image from "../image/logo.png";
 function Navbar() {
   return (

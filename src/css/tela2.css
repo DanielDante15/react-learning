@@ -1,0 +1,40 @@
+.principal{
+    padding-top: 10rem;
+    align-items: center;
+    display: flex;
+    padding-bottom: 10rem;
+}
+
+.card1{
+    margin-left: 10vw;
+}
+.slide1{
+    height: 38.5vh;
+    width: 15vw;
+    border-radius: 30px;
+}
+.slide2{
+    height: 45vh;
+    width: 15vw;
+    border-radius: 30px;
+}
+.slide3{
+    height: 38.5vh;
+    width: 15vw;
+    border-radius: 30px;
+}
+.slide4{
+    height: 38.5vh;
+    width: 15vw;
+    border-radius: 30px;
+}
+.heros{
+
+    padding-bottom: 15vh;
+    padding-left: 10vw;
+    height: 25vh;
+    width: 50vw;
+}
+
+
+

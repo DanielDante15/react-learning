@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import image1 from "../image/imgcard.png";
-import "../cartao.css";
+import "../css/cartao.css";
 import { BsArrowRight } from "react-icons/bs";
 
 function Cartao() {

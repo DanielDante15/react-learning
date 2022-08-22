@@ -1,10 +1,10 @@
 
-import './App.css';
+import './css/App.css';
 import Navbar from './components/navbar';
 import Home from './components/home';
 import Slide from './components/slide';
-import Cartao from './components/cartao';
-import Tela2 from './components/tela2';
+import Cartao from './components/pedir_cartao';
+import Tela2 from './components/beneficios';
 function App() {
   return (
     <>
