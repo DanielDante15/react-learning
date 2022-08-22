@@ -1,39 +1,36 @@
 .principal{
-    padding-top: 10rem;
+    padding-top: 10vh;
     align-items: center;
     display: flex;
-    padding-bottom: 10rem;
+    padding-bottom: 10vh;
 }
 
 .card1{
     margin-left: 10vw;
 }
 .slide1{
-    height: 38.5vh;
     width: 15vw;
     border-radius: 30px;
 }
 .slide2{
-    height: 45vh;
     width: 15vw;
     border-radius: 30px;
 }
 .slide3{
-    height: 38.5vh;
     width: 15vw;
     border-radius: 30px;
 }
 .slide4{
-    height: 38.5vh;
     width: 15vw;
     border-radius: 30px;
 }
 .heros{
-
-    padding-bottom: 1vh;
+    padding-bottom: 0.8vh;
     padding-left: 10vw;
-    height: 40vh;
     width: 50vw;
+}
+.mySwiper1{
+    padding-bottom: 0.8vh;
 }
 
 

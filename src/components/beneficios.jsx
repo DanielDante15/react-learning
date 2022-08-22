@@ -30,7 +30,7 @@ function Tela2() {
             clickable: true,
           }}
           modules={[Pagination, Navigation]}
-          className="mySwiper">
+          className="mySwiper1">
           <SwiperSlide>
             <div className="slide1"><Card1/></div>
           </SwiperSlide>
