@@ -2,7 +2,7 @@
     display: flex;
     background-color: #4C566A;
     padding-top: 8rem;
-    padding-bottom: %;
+    padding-bottom: 0%;
 }
 .link-cartao {
   text-decoration: none;
@@ -26,6 +26,7 @@
 }
 .link-cartao:hover:after {
   right: 0;
+  border-top: 0.13em solid #fcfdff;
 }
 
 .cartao-msg {
@@ -77,4 +78,44 @@
   background: #E5E9F0;
   border-radius: 1rem;
   transition-duration: 1.8s;
+}
+
+
+@media  screen and (max-width: 390px){
+  .tela-cartao {
+    display: flex;
+    background-color: #4C566A;
+    padding-top: 8rem;
+    padding-bottom: 0%;
+    flex-direction: column;
+    align-items: center;
+}
+.msg-cartao{
+  font-size: 1rem;
+  width: 10rem;
+}
+.cartao-msg {
+  display: block;
+  padding: 0% 0% 0% 0%;
+  
+}
+
+.titulo-cartao {
+  color:#fcfdff;
+    font-size: 2rem;
+    text-decoration: transparent;
+    padding-top:0px ;
+    width: 10rem;
+    display: block;
+    border-bottom:solid  transparent;
+    transition-duration: 0.2s;
+}
+.titulo-cartao:hover {
+    border-bottom:solid #fcfdff;
+    width: 2rem;
+    font-size: 2rem;
+    padding:0px 0px 0px 0px ;
+    display: block;
+}
+  
 }
