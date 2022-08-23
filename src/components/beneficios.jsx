@@ -10,9 +10,8 @@ import { Pagination } from "swiper";
 
 import Card1 from "./cards/card1";
 import Card2 from "./cards/card2";
-import Card3 from "./cards/card3";
-import Card4 from "./cards/card4";
-import Card5 from "./cards/card5";
+import foto from "../image/ftinha.jpg"
+
 
 
 function Tela2() {
@@ -25,29 +24,47 @@ function Tela2() {
       <div className="heros">
         <Swiper
           navigation={true}
-          slidesPerView={3}
+          slidesPerView={1}
+          breakpoints={{
+            "@0.00": {
+              slidesPerView: 1,
+              spaceBetween: 10,
+            },
+            "@0.75": {
+              slidesPerView: 2,
+             
+            },
+            "@1.00": {
+              slidesPerView: 2,
+              spaceBetween: 15,
+            },
+            "@1.50": {
+              slidesPerView: 3,
+              spaceBetween: 15,
+            },
+          }}
           pagination={{
             clickable: true,
           }}
           modules={[Pagination, Navigation]}
           className="mySwiper1">
           <SwiperSlide>
-            <div className="slide1"><Card1/></div>
+            <div className="slide1"><Card1 titulo="Lizard" descritivo="lorem ipsum dolor sit amet, consectetur adipiscing elit, sed mag" foto={foto}/></div>
           </SwiperSlide>
 
           <SwiperSlide>
-            <div className="slide2"><Card3/></div>
+            <div className="slide2"><Card1 titulo="Lizard" descritivo="lorem ipsum dolor sit amet, consectetur adipiscing elit, sed mag" foto={foto}/></div>
           </SwiperSlide>
 
           <SwiperSlide>
-            <div className="slide3"><Card4/></div>
+            <div className="slide3"><Card1 titulo="Lizard" descritivo="lorem ipsum dolor sit amet, consectetur adipiscing elit, sed mag" foto={foto}/></div>
           </SwiperSlide>
 
           <SwiperSlide>
-            <div className="slide4"><Card5/></div>
+            <div className="slide4"><Card1 titulo="Lizard" descritivo="lorem ipsum dolor sit amet, consectetur adipiscing elit, sed mag" foto={foto}/></div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className="slide4"><Card5/></div>
+            <div className="slide4"><Card1 titulo="Lizard" descritivo="lorem ipsum dolor sit amet, consectetur adipiscing elit, sed mag" foto={foto}/></div>
           </SwiperSlide>
         </Swiper>
       </div>

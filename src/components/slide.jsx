@@ -13,13 +13,30 @@ const CustomTextField = styled(TextField)({
   "& label.Mui-focused": {
     color: "#ECEFF4",
   },
+  "& .MuiInputBase-root": {
+      color:"#ECEFF4",
+      borderBottom:"none"
+  },
+  "& .MuiInputBase-root:before": {
+      color:"#ECEFF4",
+      borderBottom:"none"
+  },
+  "& .MuiInputBase-root:": {
+      color:"#ECEFF4",
+      borderBottom:"none"
+  },
+  "& .MuiInputBase-root-MuiInput-root:before":{
+    borderBottom: "2px solid rgba(0, 0, 0, 0)"
+  },
+  // css-1a1fmpi-MuiInputBase-root-MuiInput-root:before
+
   "& .MuiInput-underline": {
     borderBottomColor: "#ECEFF4",
-    borderBottom: "2px solid white",
+    borderBottom: "0.1vh solid white",
   },
   "& .MuiInput-underline:after": {
     borderBottomColor: "#ECEFF4",
-    borderBottom: "2px solid white",
+    borderBottom: "0.3vh solid white",
   },
   "& label": {
     color: "#ECEFF4",

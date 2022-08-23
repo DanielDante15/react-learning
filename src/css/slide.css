@@ -2,31 +2,31 @@
     background: url('../image/img1.jpg') no-repeat;
     background-size: cover;
     width: 100vw;
-    height: calc(100vh - (71px));
+    height: calc(100vh - (7.32vh));
 }
 .slide02{
     background: url('../image/img2.png') no-repeat;
     background-size: cover;
     width: 100vw;
-    height: calc(100vh - (71px));
+    height: calc(100vh - (7.32vh));
 }
 .slide03{
     background: url('..//image/img3.jpg') no-repeat;
     background-size: cover;
     width: 100vw;
-    height: calc(100vh - (71px));
+    height: calc(100vh - ( 7.32vh));
 }
 .slide04{
     background: url('../image/img4.jpg') no-repeat;
     background-size: cover;
     width: 100vw;
-    height: calc(100vh - (71px));
+    height: calc(100vh - (7.32vh));
 }
 .slide05{
     background: url('../image/img5.jpg') no-repeat;
     background-size: cover;
     width: 100vw;
-    height: calc(100vh - (71px));
+    height: calc(100vh - (7.32vh));
 }
 
 .campoMsg{
@@ -84,4 +84,17 @@ h1{
     padding: 20px;
     color: #434c5e;
 
+}
+
+@media screen and (max-width: 390px){
+    .campoMsg{
+        top: 140px;
+        flex-direction: column;
+        padding: 0 20px;
+    }
+    .campoMsg h1{
+        font-size: 34px;
+    }
+
+    
 }

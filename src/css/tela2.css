@@ -1,27 +1,31 @@
 .principal{
     padding-top: 10vh;
     align-items: center;
+    width: 80vw;
     display: flex;
     padding-bottom: 10vh;
+    justify-content: space-evenly;
+    margin: auto;
 }
 
-.card1{
-    margin-left: 10vw;
+
+.slide-menor{
+    height: 200px;
 }
 .slide1{
-    width: 15vw;
+   
     border-radius: 30px;
 }
 .slide2{
-    width: 15vw;
+    
     border-radius: 30px;
 }
 .slide3{
-    width: 15vw;
+  
     border-radius: 30px;
 }
 .slide4{
-    width: 15vw;
+  
     border-radius: 30px;
 }
 .heros{
@@ -31,7 +35,30 @@
 }
 .mySwiper1{
     padding-bottom: 0.8vh;
+    height: 39vh;
 }
 
+
+
+@media screen and (max-width: 390px){
+    .principal{
+        flex-direction: column;
+    }
+    .card1{
+        padding-bottom: 3vh;
+    }
+    .heros{
+        padding-bottom: 0.8vh;
+        padding-left: 0vw; 
+        width: 80vw;
+    }
+    .mySwiper1{
+        padding-bottom: 0.8vh;
+        height: 65vh;
+    }
+    .slide-menor{
+        height: 400px;
+    }
+}
 
 

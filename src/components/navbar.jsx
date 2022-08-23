@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "../css/navbar.css";
 import image from "../image/logo.png";
+import PositionedMenu from "./Mui_Components/menuBurguer";
 function Navbar() {
   return (
     <>
@@ -14,7 +15,11 @@ function Navbar() {
             <a href="">Empresas</a>
             <a href="">O NuDant</a>
             <a href="">Ajuda</a>
+            
         </div>
+          <div className="menu-burguer">
+              <PositionedMenu/>
+          </div>
             <a href="" className="btn-cartao"> Login</a>
       </nav>
     </>
