@@ -37,6 +37,12 @@
 }
 
 
+@media screen and (max-width:1366px ) {
+    .mySwiper1{
+        height: 46vh;
+    }
+}
+
 
 @media screen and (max-width: 390px){
     .principal{

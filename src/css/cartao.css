@@ -1,4 +1,5 @@
 .tela-cartao {
+  justify-content: space-evenly;
   display: flex;
   background-color: #4c566a;
   padding-top: 8rem;
@@ -33,7 +34,8 @@
 }
 
 .cartao-msg {
-  padding: 10% 10% 5% 15%;
+  
+  padding: 10vh 0vh 10vh 0vh;
   display: block;
   width: 30vw;
 }
