@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "../css/tela2.css";
-
+import imagem2 from "../image/img_viagem.png";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -18,7 +18,7 @@ function Tela2() {
   return (
     <div className="principal">
       <div className="card1">
-        <Card2/>
+        <Card2 titulo="NuDant Trips" img ={imagem2} desc="Acumule pontos, ganhe viagens e descontos em muitos outros produtos" msg_btn = "Quero ser NuDant"/>
       </div>
 
       <div className="heros">

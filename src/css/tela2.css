@@ -33,26 +33,28 @@
     width: 50vw;
 }
 .mySwiper1{
-    height: 34vh;
+    height: 35vh;
 }
 
 
 
 @media screen and (max-width: 390px){
     .principal{
+        padding-top: 5vh;
         flex-direction: column;
+        padding-bottom: 0;
     }
     .card1{
-        padding-bottom: 3vh;
+        padding-bottom: 4vh;
     }
     .heros{
-        padding-bottom: 0.8vh;
+        padding-bottom: 20.8vh;
         padding-left: 0vw; 
         width: 80vw;
     }
     .mySwiper1{
         padding-bottom: 0.8vh;
-        height: 43vh;
+        height: 46vh;
     }
     .slide-menor{
         height: 30vh;

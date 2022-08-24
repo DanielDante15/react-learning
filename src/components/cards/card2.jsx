@@ -10,24 +10,23 @@ import imagem2 from "../../image/img_viagem.png";
 
 
 
-function Card2() {
+function Card2(props) {
     return (
         <Card sx={{ maxWidth: 345 }}>
             <CardActionArea>
-                <CardMedia component="img" height="280" image={imagem2} alt="IMG" />
+                <CardMedia component="img" height="280" image={props.img} alt="IMG" />
                 <CardContent>
                     <Typography gutterBottom variant="h4" component="div" color="#2E3440">
-                        Nudant Trips
+                        {props.titulo}
                     </Typography>
-                    <Typography variant="body1" color="CaptionText">
-                        Acumule pontos, ganhe viagens e descontos em muitos outros
-                        produtos
+                    <Typography variant="body1" color="ActiveBorder">
+                        {props.desc}
                     </Typography>
                 </CardContent>
             </CardActionArea>
             <CardActions>
                 <Button size="medium" color="primary">
-                    Quero ser NuDant
+                    {props.msg_btn}
                 </Button>
             </CardActions>
         </Card>);

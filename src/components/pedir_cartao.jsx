@@ -1,7 +1,9 @@
 import React, { Component } from "react";
 import image1 from "../image/imgcard.png";
+import image2 from "../image/imgcard2.png";
 import "../css/cartao.css";
 import { BsArrowRight } from "react-icons/bs";
+import Card2 from "../components/cards/card2";
 
 function Cartao() {
   return (
@@ -21,7 +23,11 @@ function Cartao() {
           </a>
         </div>
         <div className="cartao-img">
-          <img src={image1} alt="opaa" />
+          <img src={image1} alt="" />
+        </div>
+        <div className="cartao-img2">
+          <Card2 titulo="Cartao Nudant" desc=" Lorem, ipsum dolor sit a officiis veniam ut tenetur, consectetur
+            fugit qui aspernatur unde molestias, quis veritatis dolorum." img={image2} msg_btn="Pedir Cartão"/>
         </div>
       </div>
       <div className="waves">
