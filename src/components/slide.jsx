@@ -3,6 +3,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, Navigation } from "swiper";
 import { TextField } from "@mui/material";
 import { alpha, styled } from "@mui/material/styles";
+import InstallMobileIcon from "@mui/icons-material/InstallMobile";
+import Button from "@mui/material/Button";
 
 import "swiper/css";
 import "swiper/css/pagination";
@@ -14,19 +16,19 @@ const CustomTextField = styled(TextField)({
     color: "#ECEFF4",
   },
   "& .MuiInputBase-root": {
-      color:"#ECEFF4",
-      borderBottom:"none"
+    color: "#ECEFF4",
+    borderBottom: "none",
   },
   "& .MuiInputBase-root:before": {
-      color:"#ECEFF4",
-      borderBottom:"none"
+    color: "#ECEFF4",
+    borderBottom: "none",
   },
   "& .MuiInputBase-root:": {
-      color:"#ECEFF4",
-      borderBottom:"none"
+    color: "#ECEFF4",
+    borderBottom: "none",
   },
-  "& .MuiInputBase-root-MuiInput-root:before":{
-    borderBottom: "2px solid rgba(0, 0, 0, 0)"
+  "& .MuiInputBase-root-MuiInput-root:before": {
+    borderBottom: "2px solid rgba(0, 0, 0, 0)",
   },
   // css-1a1fmpi-MuiInputBase-root-MuiInput-root:before
 
@@ -45,7 +47,6 @@ const CustomTextField = styled(TextField)({
     color: "#ECEFF4",
   },
 });
-
 
 function Slide() {
   return (
@@ -82,6 +83,11 @@ function Slide() {
             <div className="slide05"></div>
           </SwiperSlide>
         </Swiper>
+        <div className="baixarapp">
+          <Button  size="small" variant="contained" endIcon={<InstallMobileIcon />}>
+            Instalar app
+          </Button>
+        </div>
 
         <div className="campoMsg">
           <div>
@@ -100,7 +106,9 @@ function Slide() {
               variant="standard"
               size="medium"
             />
-            <a href="" className="btn-continuar">Continuar</a>
+            <a href="" className="btn-continuar">
+              Continuar
+            </a>
           </div>
         </div>
       </div>

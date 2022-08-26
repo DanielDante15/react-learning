@@ -4,6 +4,7 @@ import image2 from "../image/imgcard2.png";
 import "../css/cartao.css";
 import { BsArrowRight } from "react-icons/bs";
 import Card2 from "../components/cards/card2";
+import CardDark2 from "./cards/card_dark2";
 
 function Cartao() {
   return (
@@ -26,8 +27,8 @@ function Cartao() {
           <img src={image1} alt="" />
         </div>
         <div className="cartao-img2">
-          <Card2 titulo="Cartao Nudant" desc=" Lorem, ipsum dolor sit a officiis veniam ut tenetur, consectetur
-            fugit qui aspernatur unde molestias, quis veritatis dolorum." img={image2} msg_btn="Pedir Cartão"/>
+          <CardDark2 size={280} titulo="Cartão NuDant "img={image1} desc="Lorem, ipsum dolor sit a officiis veniam ut tenetur, consectetur
+            fugit qui aspernatur unde molestias, quis veritatis dolorum." msg_btn="Pedir Cartão"/>
         </div>
       </div>
       <div className="waves">

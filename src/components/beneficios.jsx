@@ -11,6 +11,7 @@ import { Pagination } from "swiper";
 import Card1 from "./cards/card1";
 import Card2 from "./cards/card2";
 import foto from "../image/ftinha.jpg"
+import CardDark2 from "./cards/card_dark2";
 
 
 
@@ -18,7 +19,9 @@ function Tela2() {
   return (
     <div className="principal">
       <div className="card1">
-        <Card2 titulo="NuDant Trips" img ={imagem2} desc="Acumule pontos, ganhe viagens e descontos em muitos outros produtos" msg_btn = "Quero ser NuDant"/>
+        <Card2 titulo="NuDant Trips" size={280}img ={imagem2} desc="Acumule pontos, ganhe viagens e descontos em muitos outros produtos" msg_btn = "Quero ser NuDant"/>
+        {/* <CardDark2 titulo="NuDant Trips" size={280}img ={imagem2} desc="Acumule pontos, ganhe viagens e descontos em muitos outros produtos" msg_btn = "Quero ser NuDant"/> */}
+      
       </div>
 
       <div className="heros">
