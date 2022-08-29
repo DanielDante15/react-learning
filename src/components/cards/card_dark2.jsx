@@ -6,8 +6,9 @@ import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import { Button, CardActionArea, CardActions } from "@mui/material";
 import { ThemeProvider, useTheme, createTheme } from "@mui/material/styles";
+import CreditCardIcon from '@mui/icons-material/CreditCard';
 import { amber, deepOrange, grey } from "@mui/material/colors";
-import imagem2 from "../../image/img_viagem.png";
+
 
 const getDesignTokens = (mode) => ({
   palette: {
@@ -15,7 +16,7 @@ const getDesignTokens = (mode) => ({
     primary: {
       ...amber,
       ...(mode === "dark" && {
-        main: "#ECEFF4",
+        main: "#D8DEE9",
       }),
     },
     ...(mode === "dark" && {
@@ -59,7 +60,7 @@ function CardDark2(props) {
           </CardContent>
         </CardActionArea>
         <CardActions>
-          <Button size="medium" color="primary">
+          <Button size="medium" color="primary" endIcon={<CreditCardIcon/>}>
             {props.msg_btn}
           </Button>
         </CardActions>

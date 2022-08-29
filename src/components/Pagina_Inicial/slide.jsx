@@ -3,13 +3,12 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, Navigation } from "swiper";
 import { TextField } from "@mui/material";
 import { alpha, styled } from "@mui/material/styles";
-import InstallMobileIcon from "@mui/icons-material/InstallMobile";
-import Button from "@mui/material/Button";
 
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import "../css/slide.css";
+import "../../css/slide.css";
+import BtnInstall from "../Mui_Components/btn";
 
 const CustomTextField = styled(TextField)({
   "& label.Mui-focused": {
@@ -84,9 +83,8 @@ function Slide() {
           </SwiperSlide>
         </Swiper>
         <div className="baixarapp">
-          <Button  size="small" variant="contained" endIcon={<InstallMobileIcon />}>
-            Instalar app
-          </Button>
+
+          <BtnInstall></BtnInstall>
         </div>
 
         <div className="campoMsg">

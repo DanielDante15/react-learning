@@ -66,7 +66,7 @@
     display: none;
 }
 
-@media screen and (max-width: 390px){
+@media screen and (max-width: 600px){
     .navOptions{
         display: none;
     }

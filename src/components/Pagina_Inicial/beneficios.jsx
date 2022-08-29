@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import "../css/tela2.css";
-import imagem2 from "../image/img_viagem.png";
+import "../../css/tela2.css";
+import imagem2 from "../../image/img_viagem.png";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -8,10 +8,10 @@ import { Navigation } from "swiper";
 import "swiper/css/navigation";
 import { Pagination } from "swiper";
 
-import Card1 from "./cards/card1";
-import Card2 from "./cards/card2";
-import foto from "../image/ftinha.jpg"
-import CardDark2 from "./cards/card_dark2";
+import Card1 from "../cards/card1";
+import Card2 from "../cards/card2";
+import foto from "../../image/ftinha.jpg"
+
 
 
 

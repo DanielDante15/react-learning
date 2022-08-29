@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import "../css/navbar.css";
-import image from "../image/logo.png";
-import PositionedMenu from "./Mui_Components/menuBurguer";
+import "../../css/navbar.css";
+import image from "../../image/logo.png";
+import PositionedMenu from "../Mui_Components/menuBurguer";
 function Navbar() {
   return (
     <>

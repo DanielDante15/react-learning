@@ -7,6 +7,9 @@
     justify-content: space-evenly;
     margin: auto;
 }
+swiper-pagination {
+    --swiper-theme-color: #ff0033;
+}
 
 
 .slide-menor{
@@ -34,6 +37,10 @@
 }
 .mySwiper1{
     height: 35vh;
+    --swiper-theme-color: #4c566a;
+}
+.swiper-pagination-bullet {
+    background-color: #4c566a;
 }
 
 
@@ -44,7 +51,7 @@
 }
 
 
-@media screen and (max-width: 390px){
+@media screen and (max-width: 600px){
     .principal{
         padding-top: 5vh;
         flex-direction: column;
@@ -54,7 +61,7 @@
         padding-bottom: 4vh;
     }
     .heros{
-        padding-bottom: 20.8vh;
+        padding-bottom: 15.8vh;
         padding-left: 0vw; 
         width: 80vw;
     }

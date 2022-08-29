@@ -1,10 +1,9 @@
 import React, { Component } from "react";
-import image1 from "../image/imgcard.png";
-import image2 from "../image/imgcard2.png";
-import "../css/cartao.css";
+import image1 from "../../image/imgcard.png";
+import "../../css/cartao.css";
 import { BsArrowRight } from "react-icons/bs";
-import Card2 from "../components/cards/card2";
-import CardDark2 from "./cards/card_dark2";
+import CardDark2 from "../cards/card_dark2";
+import CreditCardIcon from '@mui/icons-material/CreditCard';
 
 function Cartao() {
   return (
