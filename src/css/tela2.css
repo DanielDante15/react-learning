@@ -50,6 +50,12 @@ swiper-pagination {
     }
 }
 
+@media screen and (max-width:1666px ) {
+    .mySwiper1{
+        height: 42vh;
+    }
+}
+
 
 @media screen and (max-width: 600px){
     .principal{

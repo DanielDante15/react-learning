@@ -8,10 +8,11 @@ import Tela2 from './components/Pagina_Inicial/beneficios.jsx';
 function App() {
   return (
     <>
-      <Navbar/>
+    {/* <Navbar2/> */}
+      {/* <Navbar/>
       <Slide/>
       <Cartao/>
-      <Tela2/>
+      <Tela2/> */}
     </>
   );
 }
