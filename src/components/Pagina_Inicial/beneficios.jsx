@@ -20,8 +20,6 @@ function Tela2() {
     <div className="principal">
       <div className="card1">
         <Card2 titulo="NuDant Trips" size={280}img ={imagem2} desc="Acumule pontos, ganhe viagens e descontos em muitos outros produtos" msg_btn = "Quero ser NuDant"/>
-        {/* <CardDark2 titulo="NuDant Trips" size={280}img ={imagem2} desc="Acumule pontos, ganhe viagens e descontos em muitos outros produtos" msg_btn = "Quero ser NuDant"/> */}
-      
       </div>
 
       <div className="heros">

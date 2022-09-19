@@ -16,6 +16,12 @@ import MailIcon from '@mui/icons-material/Mail';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import MoreIcon from '@mui/icons-material/MoreVert';
 
+import { ThemeProvider, useTheme, createTheme } from "@mui/material/styles";
+import { amber, deepOrange, grey } from "@mui/material/colors";
+
+
+
+
 const Search = styled('div')(({ theme }) => ({
   position: 'relative',
   borderRadius: theme.shape.borderRadius,
@@ -41,6 +47,36 @@ const SearchIconWrapper = styled('div')(({ theme }) => ({
   alignItems: 'center',
   justifyContent: 'center',
 }));
+
+
+const getDesignTokens = (mode) => ({
+  palette: {
+    mode,
+    primary: {
+      ...amber,
+      ...(mode === "dark" && {
+        main: "#2E3440",
+      }),
+    },
+    ...(mode === "dark" && {
+      background: {
+        default: "#ffff",
+        paper: "#2E3440",
+      },
+    }),
+    text: {
+      ...(mode === "light"
+        ? {
+            primary: "#fff",
+            secondary: "#fff",
+          }
+        : {
+            primary: "#ffff",
+            secondary: "#fff",
+          }),
+    },
+  },
+});
 
 const StyledInputBase = styled(InputBase)(({ theme }) => ({
   color: 'inherit',
@@ -82,6 +118,8 @@ export default function NavBar2() {
 
   const menuId = 'primary-search-account-menu';
   const renderMenu = (
+
+
     <Menu
       anchorEl={anchorEl}
       anchorOrigin={{
@@ -153,8 +191,9 @@ export default function NavBar2() {
       </MenuItem>
     </Menu>
   );
-
+  const darkModeTheme = createTheme(getDesignTokens("dark"));
   return (
+    <ThemeProvider theme={darkModeTheme}>
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static">
         <Toolbar>
@@ -229,6 +268,9 @@ export default function NavBar2() {
       {renderMobileMenu}
       {renderMenu}
     </Box>
+    </ThemeProvider>
   );
+
+
 }
 

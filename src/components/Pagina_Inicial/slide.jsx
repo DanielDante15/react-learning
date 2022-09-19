@@ -9,43 +9,7 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import "../../css/slide.css";
 import BtnInstall from "../Mui_Components/btn";
-
-const CustomTextField = styled(TextField)({
-  "& label.Mui-focused": {
-    color: "#ECEFF4",
-  },
-  "& .MuiInputBase-root": {
-    color: "#ECEFF4",
-    borderBottom: "none",
-  },
-  "& .MuiInputBase-root:before": {
-    color: "#ECEFF4",
-    borderBottom: "none",
-  },
-  "& .MuiInputBase-root:": {
-    color: "#ECEFF4",
-    borderBottom: "none",
-  },
-  "& .MuiInputBase-root-MuiInput-root:before": {
-    borderBottom: "2px solid rgba(0, 0, 0, 0)",
-  },
-  // css-1a1fmpi-MuiInputBase-root-MuiInput-root:before
-
-  "& .MuiInput-underline": {
-    borderBottomColor: "#ECEFF4",
-    borderBottom: "0.1vh solid white",
-  },
-  "& .MuiInput-underline:after": {
-    borderBottomColor: "#ECEFF4",
-    borderBottom: "0.3vh solid white",
-  },
-  "& label": {
-    color: "#ECEFF4",
-  },
-  "& label.placeholder": {
-    color: "#ECEFF4",
-  },
-});
+import Example from "../Mui_Components/CpfInput";
 
 function Slide() {
   return (
@@ -94,16 +58,7 @@ function Slide() {
           <div></div>
           <div className="campoCartao">
             <h2>Peça já seu cartão NuDant</h2>
-            <CustomTextField
-              fullWidth
-              sx={{ marginBottom: 7, marginTop: 1 }}
-              helperText="Digite seu CPF"
-              id="standard-multiline-static"
-              placeholder="000.000.000-00"
-              label="CPF"
-              variant="standard"
-              size="medium"
-            />
+            <Example/>
             <a href="" className="btn-continuar">
               Continuar
             </a>
