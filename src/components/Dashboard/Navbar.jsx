@@ -17,7 +17,7 @@ import NotificationsIcon from '@mui/icons-material/Notifications';
 import MoreIcon from '@mui/icons-material/MoreVert';
 
 import { ThemeProvider, useTheme, createTheme } from "@mui/material/styles";
-import { amber, deepOrange, grey } from "@mui/material/colors";
+
 
 
 
@@ -48,12 +48,10 @@ const SearchIconWrapper = styled('div')(({ theme }) => ({
   justifyContent: 'center',
 }));
 
-
 const getDesignTokens = (mode) => ({
   palette: {
     mode,
     primary: {
-      ...amber,
       ...(mode === "dark" && {
         main: "#2E3440",
       }),
@@ -64,17 +62,6 @@ const getDesignTokens = (mode) => ({
         paper: "#2E3440",
       },
     }),
-    text: {
-      ...(mode === "light"
-        ? {
-            primary: "#fff",
-            secondary: "#fff",
-          }
-        : {
-            primary: "#ffff",
-            secondary: "#fff",
-          }),
-    },
   },
 });
 
@@ -98,6 +85,10 @@ export default function NavBar2() {
 
   const isMenuOpen = Boolean(anchorEl);
   const isMobileMenuOpen = Boolean(mobileMoreAnchorEl);
+
+  const [state, setState] = React.useState({
+    left: false,
+  });
 
   const handleProfileMenuOpen = (event) => {
     setAnchorEl(event.currentTarget);
@@ -197,6 +188,7 @@ export default function NavBar2() {
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static">
         <Toolbar>
+          
           <IconButton
             size="large"
             edge="start"
@@ -205,7 +197,10 @@ export default function NavBar2() {
             sx={{ mr: 2 }}
           >
             <MenuIcon />
+            
+
           </IconButton>
+          
           <Typography
             variant="h6"
             noWrap
