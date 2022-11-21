@@ -1,12 +1,12 @@
-import React, { Component } from "react";
+import React from "react";
 
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
-import CreditCardIcon from '@mui/icons-material/CreditCard';
+
 import { Button, CardActionArea, CardActions } from "@mui/material";
-import { ThemeProvider, useTheme, createTheme } from "@mui/material/styles";
+import { ThemeProvider, createTheme } from "@mui/material/styles";
 
 const getDesignTokens = (mode) => ({
   palette: {

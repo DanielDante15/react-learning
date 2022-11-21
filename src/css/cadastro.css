@@ -1,0 +1,33 @@
+.main{
+    display: block;
+    background-color: #2E3440;
+    height: 100vh;
+}
+
+.cad-content{
+    padding-top: 10vh;
+    display: flex;
+    justify-content: center;
+}
+
+.login-logo{
+    padding: 0.6rem;
+}
+
+.cardCadastro{
+    width:25vw;
+    height: 61vh;
+    flex-direction: column;
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+
+.login-h1 {
+    font-size: 2.5rem;
+    z-index: 99;
+    background-color: #ffffffbf;
+
+    color: #434c5e;
+  }

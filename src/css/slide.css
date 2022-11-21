@@ -87,7 +87,7 @@
   text-align: center;
 }
 
-h1 {
+.slide-h1 {
   font-size: 3rem;
   z-index: 99;
   background-color: #ffffffbf;

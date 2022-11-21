@@ -53,7 +53,7 @@ function Slide() {
 
         <div className="campoMsg">
           <div>
-            <h1>Sua liberdade financeira está aqui.</h1>
+            <h1 className="slide-h1">Sua liberdade financeira está aqui.</h1>
           </div>
           <div></div>
           <div className="campoCartao">
