@@ -7,6 +7,7 @@ import Tela2 from '../components/Pagina_Inicial/beneficios';
 
 
 
+
 export default function Pagina_Inicial() {
   return (
     <>

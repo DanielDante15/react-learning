@@ -7,7 +7,7 @@ function Navbar() {
     <>
       <nav className="navbar">
 
-      <a className="btnLogo" href=""> <img src={image}  className="logo" alt="teste" href="" /></a>
+      <a className="btnLogo" href="/"> <img src={image}  className="logo" alt="teste" href="" /></a>
       
         <div className="navOptions">
             <a href="">Home</a>
@@ -20,7 +20,7 @@ function Navbar() {
           <div className="menu-burguer">
               <PositionedMenu/>
           </div>
-            <a href="" className="btn-cartao"> Login</a>
+            <a href="/login" className="btn-cartao"> Login</a>
       </nav>
     </>
   );

@@ -7,14 +7,15 @@ import CpfLogin from "../components/Mui_Components/cpfLogin";
 import Checkbox from "@mui/material/Checkbox";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import {Button} from "@mui/material";
+import { Link, redirect } from "react-router-dom";
 
 function Login() {
   return (
     <div className="main">
       <div className="login-logo">
-        <a className="btnLogo" href="">
+        <a className="btnLogo" href="/">
           {" "}
-          <img src={image} className="logo" alt="teste" href="" />
+          <img src={image} className="logo" alt="teste" href="/" />
         </a>
       </div>
 
@@ -26,14 +27,14 @@ function Login() {
           <div className="cardLogin">
             <h1 className="login-h1">Login</h1>
             <CpfLogin />
-            <TextField label="Senha" variant="outlined" sx={{ width: 300}} />
+            <TextField label="Senha" variant="outlined" type={"password"} sx={{ width: 300}} />
             <FormControlLabel control={<Checkbox />} label="Lembre-se de mim"/>
             <Button variant="contained" sx={{width:300,mb:2,mt:3}}>Login</Button>
             
             <Typography sx={{mb:2}}>
                 ou
             </Typography>
-            <Button variant="contained" sx={{width:300}}>Cadastre-se</Button>
+            <Button variant="contained" href="/cadastro" sx={{width:300}}>Cadastre-se</Button>
             
           </div>
         </Paper>

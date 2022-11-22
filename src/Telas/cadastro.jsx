@@ -12,9 +12,9 @@ function Cadastro() {
   return (
     <div className="main">
       <div className="login-logo">
-        <a className="btnLogo" href="">
+        <a className="btnLogo" href="/">
           {" "}
-          <img src={image} className="logo" alt="teste" href="" />
+          <img src={image} className="logo" alt="teste" href="/" />
         </a>
       </div>
 
@@ -26,15 +26,15 @@ function Cadastro() {
           <div className="cardCadastro">
             <h1 className="login-h1">Cadastro NuDant</h1>
             <CpfLogin />
-            <TextField label="E-mail" variant="outlined" sx={{ width: 300,mt:3 }} />
-            <TextField label="Senha" variant="outlined" sx={{ width: 300,mt:3 }} />
-            <TextField label="Confirmar Senha" variant="outlined" sx={{ width: 300,mt:3 }} />
+            <TextField label="E-mail" variant="outlined" type={"email"} sx={{ width: 300,mt:3 }} />
+            <TextField label="Senha" variant="outlined" type={"password"} sx={{ width: 300,mt:3 }} />
+            <TextField label="Confirmar Senha" variant="outlined" type={"password"} sx={{ width: 300,mt:3 }} />
             <Button variant="contained" sx={{width:300,mb:2,mt:3}}>Cadastrar</Button>
             
             <Typography sx={{mb:2}}>
                 Já possui conta?
             </Typography>
-            <Button variant="contained" sx={{width:300}}>Fazer login</Button>
+            <Button variant="contained" href="/login" sx={{width:300}}>Fazer login</Button>
             
           </div>
         </Paper>
