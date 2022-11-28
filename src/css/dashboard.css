@@ -1,0 +1,17 @@
+.dash-userView{
+    height: 93.2vh;
+    width: 100vw;
+    background-color: aqua;
+}
+
+.dash-main{
+display: flex;
+}
+
+.dash-menu{
+    width: 13vw;
+}
+.dash-exit{
+    color: white;
+    text-decoration: none;
+}
