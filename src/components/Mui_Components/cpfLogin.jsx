@@ -20,7 +20,7 @@ function CustomMaskField({ inputRef, ...otherProps }) {
 }
 
 // Component with Material UI
-export default function CpfLogin() {
+export default function CpfLogin({ cpf, setCpf }) {
   return (
     <CustomTextField
       fullWidth
@@ -31,6 +31,8 @@ export default function CpfLogin() {
       InputProps={{ inputComponent: CustomMaskField }}
       variant="outlined"
       size="medium"
+      value={cpf}
+      onChange={(e) => setCpf(e.target.value)}
     />
   );
 }

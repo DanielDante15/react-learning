@@ -12,7 +12,7 @@ export default function DashBoard() {
 
 
   const api = () =>{
-    axios.get("http://127.0.0.1:8000/clientes/2/", {headers: {'X-Requested-With': 'XMLHttpRequest'},})
+    axios.get("http://127.0.0.1:8000/clientes/1/", {headers: {'X-Requested-With': 'XMLHttpRequest'},})
     .then((res) => {
       setDados(res.data)
       console.log(dados)
